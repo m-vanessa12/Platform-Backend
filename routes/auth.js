@@ -15,6 +15,8 @@ const profileMentors = require('../controllers/DisplayMentor')
 const discussinContent = require('../controllers/CreateDiscusion')
 const discusionForum = require('../controllers/DisplayDiscussion')
 const likes = require('../controllers/LikeDiscuions')
+const comments = require('../controllers/CreateComment')
+const commenstByDiscussion= require('../controllers/CommentDiscussion')
 
 
 
@@ -48,6 +50,10 @@ router.get ('/all-mentors', profileMentors.ProfilesOfMentor)
 router.post('/discussion', verifyToken, discussinContent.CreateDiscussion)
 router.get ('/forum', discusionForum.displayDiscussion)
 router.post('/likes', likes.likes)
+router.post('/comments', verifyToken, comments.addComment)
+router.get('/discussion-comments/:discussionId', commenstByDiscussion.getCommentsByDiscussionId);
+
+
 
 
 // handling file uploads

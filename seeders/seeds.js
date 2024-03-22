@@ -20,6 +20,18 @@ const defaultMenteeUsers = [
     email: 'anne@gmail.com',
     password: 'Anne12', 
   },
+  {
+    firstName: 'Jeanne',
+    lastName: 'Mukakalisa',
+    email: 'jeanne@gmail.com',
+    password: 'Jeanne12', 
+  },
+  {
+    firstName: 'Edwick',
+    lastName: 'Murungu',
+    email: 'edwick@gmail.com',
+    password: 'Testing12', 
+  },
 
 ];
 
